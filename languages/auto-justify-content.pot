@@ -1,0 +1,146 @@
+# Copyright (C) 2024 MENJ
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Auto Justify Content 2.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/menj\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: auto-justify-content.php
+msgid "Auto Justify Content"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Auto Justify"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Settings"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Settings saved successfully."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "General"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Typography"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Advanced"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Enable Plugin"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Master switch for text justification across your site."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Scope"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Justification Scope"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Choose where text justification should be applied."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Blog Posts Only"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Entire Site"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Desktop Only"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Disable justification on screens smaller than 768px."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Hyphenation"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Enable Hyphenation"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Enable automatic hyphenation for cleaner text in narrow columns."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Requires proper lang attribute on your HTML element."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "About Hyphenation"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "CSS hyphenation relies on the browser's built-in dictionary for your document's language. Ensure your theme outputs the correct lang attribute (e.g., lang=\"en\") on the HTML element for best results."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Theme Compatibility"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Theme Fallback"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Apply to generic article elements when theme lacks standard wrappers."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Enable this if justification doesn't work with your theme."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Exclusions"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Exclude Selectors"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "CSS selectors to exclude from justification (comma-separated)."
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Selector Examples"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Common selectors to exclude: .elementor-testimonial, .wp-block-quote, .sidebar, .widget-area, .no-justify"
+msgstr ""
+
+#: auto-justify-content.php
+msgid "Save Settings"
+msgstr ""
+
+#: auto-justify-content.php
+#, php-format
+msgid "Developed by %s"
+msgstr ""
