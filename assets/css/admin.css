@@ -1,28 +1,28 @@
 /**
- * Auto Justify Content - Admin Styles
+ * Auto Justify Content — Admin Styles
  *
  * @package AutoJustifyContent
- * @since 2.0.0
+ * @since 3.0.0
  */
 
 :root {
-    --ajc-primary: #2563eb;
-    --ajc-primary-hover: #1d4ed8;
-    --ajc-primary-light: rgba(37, 99, 235, 0.08);
-    --ajc-success: #059669;
-    --ajc-info: #0891b2;
-    --ajc-info-light: #ecfeff;
-    --ajc-bg: #f8fafc;
-    --ajc-card: #ffffff;
-    --ajc-border: #e2e8f0;
-    --ajc-text: #1e293b;
+    --ajc-primary:        #2563eb;
+    --ajc-primary-hover:  #1d4ed8;
+    --ajc-primary-light:  rgba(37, 99, 235, 0.08);
+    --ajc-success:        #059669;
+    --ajc-info:           #0891b2;
+    --ajc-info-light:     #ecfeff;
+    --ajc-bg:             #f8fafc;
+    --ajc-card:           #ffffff;
+    --ajc-border:         #e2e8f0;
+    --ajc-text:           #1e293b;
     --ajc-text-secondary: #64748b;
-    --ajc-text-tertiary: #94a3b8;
-    --ajc-radius: 12px;
-    --ajc-radius-sm: 8px;
-    --ajc-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
-    --ajc-shadow-lg: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    --ajc-transition: 0.15s ease;
+    --ajc-text-tertiary:  #94a3b8;
+    --ajc-radius:         12px;
+    --ajc-radius-sm:      8px;
+    --ajc-shadow:         0 1px 3px rgba(0,0,0,.04), 0 1px 2px rgba(0,0,0,.06);
+    --ajc-shadow-lg:      0 4px 6px -1px rgba(0,0,0,.05), 0 2px 4px -1px rgba(0,0,0,.03);
+    --ajc-t:              0.15s ease;
 }
 
 /* ==========================================================================
@@ -31,14 +31,11 @@
 
 .ajc-wrap {
     margin: 20px 20px 20px 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-.ajc-container {
-    max-width: 680px;
-    margin: 0 auto;
-}
+.ajc-container { max-width: 700px; margin: 0 auto; }
 
 /* ==========================================================================
    Header
@@ -53,9 +50,7 @@
     border-bottom: 1px solid var(--ajc-border);
 }
 
-.ajc-logo {
-    color: var(--ajc-primary);
-}
+.ajc-logo { color: var(--ajc-primary); }
 
 .ajc-title-group {
     display: flex;
@@ -73,12 +68,13 @@
 }
 
 .ajc-version {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     color: var(--ajc-text-tertiary);
     background: var(--ajc-bg);
-    padding: 4px 10px;
+    padding: 3px 9px;
     border-radius: 20px;
+    border: 1px solid var(--ajc-border);
 }
 
 /* ==========================================================================
@@ -88,21 +84,18 @@
 .ajc-notice {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 14px 18px;
+    gap: 10px;
+    padding: 13px 18px;
     border-radius: var(--ajc-radius-sm);
     margin-bottom: 24px;
     font-size: 14px;
     font-weight: 500;
 }
 
-.ajc-notice-success {
-    background: #ecfdf5;
-    color: var(--ajc-success);
-}
+.ajc-notice-success { background: #ecfdf5; color: var(--ajc-success); }
 
 /* ==========================================================================
-   Tabs Navigation
+   Tabs
    ========================================================================== */
 
 .ajc-tabs {
@@ -118,27 +111,21 @@
 .ajc-tab {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    font-size: 14px;
+    gap: 7px;
+    padding: 11px 18px;
+    font-size: 13px;
     font-weight: 500;
     color: var(--ajc-text-secondary);
     text-decoration: none;
     border-radius: var(--ajc-radius-sm);
-    transition: var(--ajc-transition);
+    transition: var(--ajc-t);
     flex: 1;
     justify-content: center;
+    position: relative;
 }
 
-.ajc-tab:hover {
-    color: var(--ajc-text);
-    background: var(--ajc-card);
-}
-
-.ajc-tab:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--ajc-primary-light);
-}
+.ajc-tab:hover { color: var(--ajc-text); background: var(--ajc-card); }
+.ajc-tab:focus { outline: none; box-shadow: 0 0 0 2px var(--ajc-primary-light); }
 
 .ajc-tab-active {
     color: var(--ajc-primary);
@@ -146,32 +133,30 @@
     box-shadow: var(--ajc-shadow);
 }
 
-.ajc-tab svg {
-    flex-shrink: 0;
+.ajc-tab-badge {
+    font-size: 10px;
+    font-weight: 600;
+    background: var(--ajc-primary);
+    color: white;
+    padding: 1px 6px;
+    border-radius: 10px;
+    letter-spacing: 0.02em;
 }
 
 /* ==========================================================================
    Tab Content
    ========================================================================== */
 
-.ajc-tab-content {
-    display: none;
-}
+.ajc-tab-content { display: none; }
 
 .ajc-tab-content-active {
     display: block;
-    animation: ajc-fade-in 0.2s ease;
+    animation: ajc-fadein 0.18s ease;
 }
 
-@keyframes ajc-fade-in {
-    from {
-        opacity: 0;
-        transform: translateY(4px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes ajc-fadein {
+    from { opacity: 0; transform: translateY(3px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ==========================================================================
@@ -187,49 +172,46 @@
     box-shadow: var(--ajc-shadow);
 }
 
-.ajc-card-primary {
-    border-color: var(--ajc-primary);
-    border-width: 2px;
-}
+.ajc-card-primary { border-color: var(--ajc-primary); border-width: 2px; }
 
 .ajc-card-info {
     display: flex;
-    gap: 16px;
+    gap: 14px;
     background: var(--ajc-info-light);
     border-color: transparent;
+    box-shadow: none;
 }
 
-.ajc-info-icon {
-    flex-shrink: 0;
-    color: var(--ajc-info);
-}
+.ajc-info-icon { flex-shrink: 0; color: var(--ajc-info); margin-top: 1px; }
 
 .ajc-info-content h3 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--ajc-text);
-    margin: 0 0 6px 0;
+    margin: 0 0 5px;
 }
 
 .ajc-info-content p {
     font-size: 13px;
     color: var(--ajc-text-secondary);
-    margin: 0;
+    margin: 0 0 8px;
     line-height: 1.5;
 }
 
+.ajc-info-content p:last-child { margin-bottom: 0; }
+
 .ajc-card-title {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     color: var(--ajc-text-tertiary);
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
     padding: 0;
 }
 
 /* ==========================================================================
-   Settings Rows
+   Setting rows
    ========================================================================== */
 
 .ajc-setting-row {
@@ -241,32 +223,17 @@
     border-bottom: 1px solid var(--ajc-border);
 }
 
-.ajc-setting-row:first-of-type,
-.ajc-card-title + .ajc-setting-row {
-    padding-top: 0;
-}
+.ajc-card-title + .ajc-setting-row,
+.ajc-setting-row:first-of-type { padding-top: 0; }
+.ajc-setting-row:last-child { border-bottom: none; padding-bottom: 0; }
+.ajc-setting-main { padding: 0; }
+.ajc-setting-vertical { flex-direction: column; gap: 12px; }
 
-.ajc-setting-row:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.ajc-setting-main {
-    padding: 0;
-}
-
-.ajc-setting-vertical {
-    flex-direction: column;
-    gap: 12px;
-}
-
-.ajc-setting-info {
-    flex: 1;
-}
+.ajc-setting-info { flex: 1; min-width: 0; }
 
 .ajc-setting-info label {
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--ajc-text);
     margin-bottom: 4px;
@@ -274,106 +241,80 @@
 }
 
 .ajc-setting-info p {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--ajc-text-secondary);
     margin: 0;
     line-height: 1.5;
 }
 
-.ajc-hint {
-    font-size: 12px !important;
-    color: var(--ajc-text-tertiary) !important;
-    margin-top: 6px !important;
-}
+.ajc-hint { font-size: 12px !important; color: var(--ajc-text-tertiary) !important; margin-top: 5px !important; }
 
 /* ==========================================================================
-   Toggle Switch
+   Toggle
    ========================================================================== */
 
 .ajc-toggle {
     position: relative;
     display: inline-block;
-    width: 48px;
-    height: 28px;
+    width: 46px;
+    height: 26px;
     flex-shrink: 0;
 }
 
-.ajc-toggle input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
+.ajc-toggle input { opacity: 0; width: 0; height: 0; }
 
 .ajc-toggle-slider {
     position: absolute;
     cursor: pointer;
     inset: 0;
     background: var(--ajc-border);
-    border-radius: 28px;
-    transition: var(--ajc-transition);
+    border-radius: 26px;
+    transition: var(--ajc-t);
 }
 
 .ajc-toggle-slider::before {
     content: "";
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     left: 3px;
     bottom: 3px;
     background: white;
     border-radius: 50%;
-    transition: var(--ajc-transition);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition: var(--ajc-t);
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
 }
 
-.ajc-toggle input:checked + .ajc-toggle-slider {
-    background: var(--ajc-primary);
-}
-
-.ajc-toggle input:checked + .ajc-toggle-slider::before {
-    transform: translateX(20px);
-}
-
-.ajc-toggle input:focus + .ajc-toggle-slider {
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
-}
+.ajc-toggle input:checked + .ajc-toggle-slider { background: var(--ajc-primary); }
+.ajc-toggle input:checked + .ajc-toggle-slider::before { transform: translateX(20px); }
+.ajc-toggle input:focus + .ajc-toggle-slider { box-shadow: 0 0 0 3px rgba(37,99,235,.2); }
 
 /* ==========================================================================
    Select
    ========================================================================== */
 
-.ajc-select-wrap {
-    position: relative;
-    flex-shrink: 0;
-}
+.ajc-select-wrap { position: relative; flex-shrink: 0; }
 
 .ajc-select-wrap select {
     appearance: none;
     background: var(--ajc-bg);
     border: 1px solid var(--ajc-border);
     border-radius: var(--ajc-radius-sm);
-    padding: 10px 40px 10px 14px;
-    font-size: 14px;
+    padding: 9px 38px 9px 13px;
+    font-size: 13px;
     font-weight: 500;
     color: var(--ajc-text);
     cursor: pointer;
-    transition: var(--ajc-transition);
-    min-width: 180px;
+    transition: var(--ajc-t);
+    min-width: 190px;
 }
 
-.ajc-select-wrap select:hover {
-    border-color: var(--ajc-primary);
-}
-
-.ajc-select-wrap select:focus {
-    outline: none;
-    border-color: var(--ajc-primary);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-}
+.ajc-select-wrap select:hover { border-color: var(--ajc-primary); }
+.ajc-select-wrap select:focus { outline: none; border-color: var(--ajc-primary); box-shadow: 0 0 0 3px rgba(37,99,235,.15); }
 
 .ajc-select-arrow {
     position: absolute;
-    right: 14px;
+    right: 13px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
@@ -389,62 +330,243 @@
     background: var(--ajc-bg);
     border: 1px solid var(--ajc-border);
     border-radius: var(--ajc-radius-sm);
-    padding: 12px 16px;
-    font-size: 14px;
+    padding: 11px 14px;
+    font-size: 13px;
     color: var(--ajc-text);
-    transition: var(--ajc-transition);
+    transition: var(--ajc-t);
     box-sizing: border-box;
 }
 
-.ajc-input:hover {
-    border-color: #cbd5e1;
+.ajc-input-sm { width: 220px; }
+.ajc-input:hover { border-color: #cbd5e1; }
+.ajc-input:focus { outline: none; border-color: var(--ajc-primary); box-shadow: 0 0 0 3px rgba(37,99,235,.15); }
+.ajc-input::placeholder { color: var(--ajc-text-tertiary); }
+
+/* ==========================================================================
+   Live Preview Card
+   ========================================================================== */
+
+.ajc-preview-card {
+    background: #fffef9;
+    border: 1px solid #e8e0d0;
+    border-radius: var(--ajc-radius);
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,.06), inset 0 1px 0 rgba(255,255,255,.8);
 }
 
-.ajc-input:focus {
-    outline: none;
-    border-color: var(--ajc-primary);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+.ajc-preview-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    background: #f5f0e8;
+    border-bottom: 1px solid #e8e0d0;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8b7355;
 }
 
-.ajc-input::placeholder {
-    color: var(--ajc-text-tertiary);
+.ajc-preview-body {
+    padding: 28px 32px 24px;
 }
+
+.ajc-preview-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #2c2416;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.ajc-preview-cap {
+    display: inline-block;
+    float: left;
+    font-size: 4.0em;
+    font-weight: 700;
+    font-family: "Playfair Display", Georgia, serif;
+    line-height: 0.83;
+    margin: 0.04em 0.1em -0.05em 0;
+    padding: 0 0.05em 0 0;
+    color: #1e293b;
+    transition: font-family 0.2s ease, color 0.15s ease, font-size 0.15s ease, line-height 0.15s ease, margin 0.15s ease;
+}
+
+.ajc-preview-gdpr {
+    display: none;
+    align-items: flex-start;
+    gap: 7px;
+    padding: 10px 20px;
+    background: #fffbeb;
+    border-top: 1px solid #fde68a;
+    font-size: 11px;
+    color: #92400e;
+    line-height: 1.5;
+}
+
+.ajc-preview-gdpr.ajc-visible { display: flex; }
+.ajc-preview-gdpr svg { flex-shrink: 0; margin-top: 1px; }
+
+/* Font loading indicator */
+.ajc-preview-loading .ajc-preview-cap {
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+
+/* ==========================================================================
+   Style Picker (Drop / Raised)
+   ========================================================================== */
+
+.ajc-style-picker {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.ajc-style-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 12px 16px;
+    border: 2px solid var(--ajc-border);
+    border-radius: var(--ajc-radius-sm);
+    background: var(--ajc-bg);
+    transition: var(--ajc-t);
+    color: var(--ajc-text-secondary);
+}
+
+.ajc-style-option input[type="radio"] { display: none; }
+.ajc-style-option:hover { border-color: var(--ajc-primary); color: var(--ajc-text); }
+
+.ajc-style-active {
+    border-color: var(--ajc-primary) !important;
+    background: var(--ajc-primary-light) !important;
+    color: var(--ajc-primary) !important;
+}
+
+.ajc-style-icon { line-height: 1; }
+
+.ajc-style-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ==========================================================================
+   Lines Picker (2 / 3 / 4)
+   ========================================================================== */
+
+.ajc-lines-picker {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.ajc-lines-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    width: 58px;
+    padding: 10px 8px;
+    border: 2px solid var(--ajc-border);
+    border-radius: var(--ajc-radius-sm);
+    background: var(--ajc-bg);
+    transition: var(--ajc-t);
+    color: var(--ajc-text-secondary);
+    text-align: center;
+}
+
+.ajc-lines-option input[type="radio"] { display: none; }
+.ajc-lines-option:hover { border-color: var(--ajc-primary); color: var(--ajc-text); }
+
+.ajc-lines-active {
+    border-color: var(--ajc-primary) !important;
+    background: var(--ajc-primary-light) !important;
+    color: var(--ajc-primary) !important;
+}
+
+.ajc-lines-option span {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    font-family: Georgia, serif;
+}
+
+.ajc-lines-option small {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   Colour Picker (wraps WordPress Iris)
+   ========================================================================== */
+
+.ajc-color-wrap { flex-shrink: 0; }
+
+/* Tame WP colour picker to fit our design */
+.ajc-color-wrap .wp-picker-container { display: inline-flex; align-items: center; gap: 8px; }
+.ajc-color-wrap .wp-color-result.button { border-radius: var(--ajc-radius-sm) !important; height: 36px !important; padding: 0 12px !important; font-size: 13px !important; border-color: var(--ajc-border) !important; }
+.ajc-color-wrap .wp-picker-open .wp-color-result.button { border-color: var(--ajc-primary) !important; box-shadow: 0 0 0 3px rgba(37,99,235,.15) !important; }
+.ajc-color-wrap .wp-picker-clear { font-size: 12px !important; color: var(--ajc-text-tertiary) !important; }
+
+/* ==========================================================================
+   Shortcode code block
+   ========================================================================== */
+
+.ajc-code {
+    display: inline-block;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    background: rgba(0,0,0,.06);
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin: 4px 0 8px;
+    color: var(--ajc-text);
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+.ajc-hidden { display: none !important; }
 
 /* ==========================================================================
    Actions / Buttons
    ========================================================================== */
 
-.ajc-actions {
-    margin-top: 24px;
-}
+.ajc-actions { margin-top: 24px; }
 
 .ajc-button-primary,
 .ajc-actions .button-primary {
     background: var(--ajc-primary) !important;
     border: none !important;
     border-radius: var(--ajc-radius-sm) !important;
-    padding: 12px 28px !important;
+    padding: 11px 28px !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     color: white !important;
     cursor: pointer !important;
-    transition: var(--ajc-transition) !important;
+    transition: var(--ajc-t) !important;
     box-shadow: var(--ajc-shadow-lg) !important;
     height: auto !important;
     line-height: 1.4 !important;
 }
 
 .ajc-button-primary:hover,
-.ajc-actions .button-primary:hover {
-    background: var(--ajc-primary-hover) !important;
-    transform: translateY(-1px);
-}
+.ajc-actions .button-primary:hover { background: var(--ajc-primary-hover) !important; transform: translateY(-1px); }
 
 .ajc-button-primary:focus,
-.ajc-actions .button-primary:focus {
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3) !important;
-    outline: none !important;
-}
+.ajc-actions .button-primary:focus { box-shadow: 0 0 0 3px rgba(37,99,235,.3) !important; outline: none !important; }
 
 /* ==========================================================================
    Footer
@@ -452,50 +574,25 @@
 
 .ajc-footer {
     margin-top: 32px;
-    padding-top: 24px;
+    padding-top: 20px;
     border-top: 1px solid var(--ajc-border);
     text-align: center;
 }
 
-.ajc-footer p {
-    font-size: 13px;
-    color: var(--ajc-text-tertiary);
-    margin: 0;
-}
-
-.ajc-footer a {
-    color: var(--ajc-primary);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.ajc-footer a:hover {
-    text-decoration: underline;
-}
+.ajc-footer p { font-size: 12px; color: var(--ajc-text-tertiary); margin: 0; }
+.ajc-footer a { color: var(--ajc-primary); text-decoration: none; font-weight: 500; }
+.ajc-footer a:hover { text-decoration: underline; }
 
 /* ==========================================================================
    Responsive
    ========================================================================== */
 
-@media (max-width: 600px) {
-    .ajc-wrap {
-        margin: 10px;
-    }
-
-    .ajc-tabs {
-        flex-direction: column;
-    }
-
-    .ajc-tab {
-        justify-content: flex-start;
-    }
-
-    .ajc-setting-row {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .ajc-select-wrap select {
-        width: 100%;
-    }
+@media (max-width: 680px) {
+    .ajc-wrap { margin: 10px; }
+    .ajc-tabs { flex-direction: column; }
+    .ajc-tab { justify-content: flex-start; }
+    .ajc-setting-row { flex-direction: column; gap: 14px; }
+    .ajc-select-wrap select, .ajc-input-sm { width: 100%; }
+    .ajc-style-picker, .ajc-lines-picker { flex-wrap: wrap; }
+    .ajc-preview-body { padding: 20px; }
 }

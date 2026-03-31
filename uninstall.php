@@ -7,19 +7,26 @@
  * @package AutoJustifyContent
  */
 
-// Exit if not called by WordPress.
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
     exit;
 }
 
-// Remove all plugin options.
 $options = [
+    // Justification
     'ajc_enabled',
     'ajc_scope',
     'ajc_hyphen',
     'ajc_mobile',
     'ajc_fallback',
     'ajc_exclude',
+    // Drop cap
+    'ajc_dc_enabled',
+    'ajc_dc_style',
+    'ajc_dc_lines',
+    'ajc_dc_mobile',
+    'ajc_dc_font',
+    'ajc_dc_custom_font',
+    'ajc_dc_color',
 ];
 
 foreach ( $options as $option ) {
